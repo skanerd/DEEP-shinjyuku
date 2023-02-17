@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新宿カレンダー</title>
+    <link href="css/ress.css" rel="stylesheet">
+    <link href="css/style-cafe.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- コンテンツエリア -->
+    <div class="contents-wrapper movie-bg">
+        <!-- navigation -->
+    <div class="navigation">
+        <input type="checkbox" id="icon">
+            <label for="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div id="header">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html" class="btn">新宿カレンダー</a></li>
+                        <li><a href="date-plan.html" class="btn">デートプラン</a></li>
+                        <li><a href="cafe.html" class="btn">カフェ</a></li>
+                        <li><a href="movie.html" class="btn">メーキング</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+        <div class="movie-wrapper">
+            <h1 class="heading">メイキングムービー</h1>
+            <div class="movie">
+                <video src="movie/douga.mp4" controls width="800" height="400"></vide>
+            </div>
+            <div class="content-movie-text-wrapper">
+                <div class="content-movie-text">
+                    <p>
+                        <span class="comment">お洒落なカフェを何箇所か行ってみたんですけど、彼女できませんでした。残念です。</span><br>
+                        <span class="name">金炯旭</span>
+                    </p>
+                </div>
+                <div class="content-movie-text">
+                    <p>
+                        <span class="comment">素敵なメンバーと素敵な作品を作れました！大満足です！</span><br>
+                        <span class="name">饗場連太郎</span>
+                    </p>
+                </div>
+                <div class="content-movie-text">
+                    <p>
+                        <span class="comment">前途多難でしたが、最後はみんなで楽しくグループワークを終えられてよかったです＾＾</span><br>
+                        <span class="name2">中里楓</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- フッターエリア -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <!-- フッターナビゲーション -->
+            <nav class="footer-navigation">
+                <ul>
+                    <a href="index.html">
+                        <li>
+                            <span class="number">00</span>
+                            <span class="content-title"> / <span class="kanji">HOME</span>
+                        </li>
+                    </a>
+
+                    <a href="cafe.html">
+                        <li>
+                            <span class="number">01</span>
+                            <span class="content-title"> / お<span class="kanji">洒落</span>でイマドキな<span
+                                    class="kanji">新宿Cafe</span>カタログ</span>
+                        </li>
+                    </a>
+
+                    <a href="date-plan.html">
+                        <li>
+                            <span class="number">02</span>
+                            <span class="content-title"> / <span class="kanji">新宿</span>デートプラン</span>
+                        </li>
+                    </a>
+
+                    <a href="movie.html">
+                        <li>
+                            <span class="number">03</span>
+                            <span class="content-title"> / メイキングムービー</span>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+
+            <div class="bar-code-img">
+                <img src="images/bar-code.png" alt="バーコード">
+            </div>
+        </div>
+
+        <!-- コピーライト -->
+        <div class="copyright">
+            <small><span class="copyright-title">&copy;新宿カレンダー</span> October 2022 no.01</small>
+        </div>
+    </footer>
+    </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+        $(function () {
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function () {
+                // スクロールの速度
+                var speed = 400; // ミリ秒
+                // アンカーの値取得
+                var href = $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

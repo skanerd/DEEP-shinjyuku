@@ -1,0 +1,304 @@
+body {
+    margin: 30px;
+    background-color: black;
+}
+
+
+
+
+
+/* 表 */
+
+.cover {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    height: 750px;
+    background-color: rgba(48, 48, 191, 0.4)
+}
+.mainvisual {
+    width: 1080px;
+    height: 680px;
+    background-image: url(../images/front3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.title p {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-size: 110px;
+    font-weight: bold;
+    text-shadow: 4px 4px 0px #FF69B4, 8px 8px 0px #42A5F5, 12px 12px 0px #E3F2FD;
+    letter-spacing: 20px;
+    /* color: #FF69B4; */
+    /* color: #d7a98c; */
+    /* color: #fddea5; */
+}
+.date {
+    padding-right: 2em;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 0px gray, 4px 4px 0px white;
+}
+.visual {
+    margin: auto;
+    width: 95%;
+    height: 330px;
+}
+.semititle {
+    font-size: 32px;
+    font-weight: bolder;
+    color: black;
+    padding-bottom: 6px;
+}
+.visual ul {
+    list-style: none;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgba(48, 48, 191, 0.4);
+    border-radius: 15%;
+    color: white;
+}
+.visual a {
+    border-bottom: solid;
+    color: white;
+}
+.visual ul a:hover {
+    transition: all 0.5s 0s ease;
+    color: #FF69B4;
+}
+.topvisual {
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.topvisual ul {
+    padding-left: 0;
+}
+.rightvisual {
+    text-align: left;
+}
+.leftvisual {
+    text-align: right;
+}
+.bottomvisual {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottomvisual ul {
+    padding-left: 0;
+}
+
+
+
+
+
+
+/* catchcopy */
+
+.catchcopy {
+    margin-left: 100px;
+    width: 80%;
+    height: 124px;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    font-weight: bold;
+    color: #FF69B4;
+}
+.catchcopy-a p {
+    margin-top: 40px;
+    font-size: 48px;
+}
+.catchcopy-b {
+    font-size: 54px;
+}
+.catchcopy-c p {
+    margin-top: 0;
+    font-size: 100px;
+}
+
+
+
+
+
+/* frontinfo */
+.frontinfo {
+    height: 70px;
+    padding-left: 30px;
+    color: gray;
+}
+.frontinfo p {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* bezel */
+
+.topbezel {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 680px;
+    font-size: 40px;
+    color: white;
+}
+.topbezel p {
+    margin: auto;
+    height: 90%;
+    font-family: 'Noto Sans JP';
+    writing-mode: vertical-rl;
+}
+.rightbezel {
+    margin-top: 270px;
+    width: 100px;
+}
+.leftbezel {
+    margin-top: 60px;
+    width: 100px;
+}
+.bottombezel {
+    height: 70px;
+    text-align: right;
+}
+.bottombezel a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+
+
+
+
+/* 裏 */
+
+.backcover {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    height: 750px;
+    background-color: rgba(48, 48, 191, 0.4)
+}
+.backmainvisual {
+    width: 1080px;
+    height: 678px;
+    background-image: url(../images/back2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+
+/* back catchcopy */
+
+.backcatchcopy {
+    margin-top: 510px;
+    padding-left: 50px;
+    width: 95%;
+    height: 170px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+    font-weight: bold;
+    color: #FF69B4;
+}
+.backcatchcopy-a {
+    margin-top: 20px;
+    font-size: 36px;
+}
+.backcatchcopy-b {
+    margin-top: 10px;
+    font-size: 34px;
+}
+.backcatchcopy-c p {
+    font-size: 56px;
+}
+
+
+
+
+
+/* backspace */
+
+.backspace {
+    height: 70px;
+}
+.backspace a {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/* back bezel */
+
+.backtopbezel {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 76%;
+    font-size: 40px;
+    color: white;
+}
+.backtopbezel p {
+    margin: auto;
+    height: 90%;
+    font-family: 'Noto Sans JP';
+    writing-mode: vertical-rl;
+}
+.backrightbezel {
+    margin-top: 130px;
+    width: 100px;
+    text-align: right;
+}
+.backleftbezel {
+    margin-top: 40px;
+    width: 100px;
+}
+.backbottombezel {
+    margin: auto;
+    height: 24%;
+    text-align: right;
+}
+.backbottombezel ul {
+    margin: 0;
+    padding-left: 10px;
+    height: 60%;
+    font-size: 18px;
+    list-style: none;
+    text-align: left;
+    color: white;
+}
+.barcode img {
+    width: 200px;
+    height: 100px;
+}
+
+
+
+.qrcode {
+    height: 40%;
+}
+.qrcode img {
+    height: 100%;
+}
